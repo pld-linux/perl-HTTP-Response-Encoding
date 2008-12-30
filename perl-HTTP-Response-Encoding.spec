@@ -16,7 +16,10 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/HTTP/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	bb5880687bfb8b1e220c5c3c2b7d1408
 URL:		http://search.cpan.org/dist/HTTP-Response-Encoding/
+%{?with_tests:BuildRequires:	perl-Test-Pod >= 1.14}
+%{?with_tests:BuildRequires:	perl-Test-Pod-Coverage >= 1.04}
 BuildRequires:	perl-devel >= 1:5.8.0
+%{?with_tests:BuildRequires:	perl-libwww}
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
