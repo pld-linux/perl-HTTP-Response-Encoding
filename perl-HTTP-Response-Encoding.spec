@@ -8,13 +8,13 @@
 %define	pnam	Response-Encoding
 Summary:	HTTP::Response::Encoding - Adds encoding() to HTTP::Response
 Name:		perl-HTTP-Response-Encoding
-Version:	0.05
+Version:	0.06
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/HTTP/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	bb5880687bfb8b1e220c5c3c2b7d1408
+# Source0-md5:	7e1d46f2d88022580e1a18bb7ac4ab71
 URL:		http://search.cpan.org/dist/HTTP-Response-Encoding/
 %{?with_tests:BuildRequires:	perl-Test-Pod >= 1.14}
 %{?with_tests:BuildRequires:	perl-Test-Pod-Coverage >= 1.04}
