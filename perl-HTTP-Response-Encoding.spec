@@ -3,7 +3,6 @@
 %bcond_without	autodeps	# don't BR packages needed only for resolving deps
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	HTTP
 %define	pnam	Response-Encoding
 Summary:	HTTP::Response::Encoding - Adds encoding() to HTTP::Response
